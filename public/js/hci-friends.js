@@ -5,6 +5,12 @@ $(document).ready(function() {
 	initializePage();
 })
 
+function clickedName(e) {
+	e.preventDefault();
+	$(this).html(anagrammedName($this.text());
+		consol.log(this);
+}
+
 /*
  * Function that is called when the document is ready.
  */

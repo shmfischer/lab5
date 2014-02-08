@@ -13,7 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 
 var app = express();
-
+var add = require('./routes/add');
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +36,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/add',add.addFriend)
 // Example route
 // app.get('/users', user.list);
 
